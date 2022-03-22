@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+body {
+  background: linear-gradient(
+    to right,
+    rgba(255, 244, 141, 0.8),
+    rgb(188, 201, 4)
+  );
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.background {
+  background: linear-gradient(
+      to right,
+      rgba(255, 244, 141, 0.8),
+      rgb(188, 201, 4)
+    ),
+    url(https://images.unsplash.com/photo-1573164574472-797cdf4a583a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)
+      no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-pathway {
+  background-color: #01224d;
+}
+
+.pathwayColor {
+  color: #01224d;
+}
+
+.register {
+  color: #01224d;
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact a {
+  color: #01224d;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .about h5 {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .companies {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.hoverShadow {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hoverShadow:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
