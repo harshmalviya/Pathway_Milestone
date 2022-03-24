@@ -1,11 +1,22 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+
+:root {
+  --pathway-blue: #01224d;
+  --pathway-yellow-light: rgba(255, 244, 141, 0.8);
+  /* --pathway-yellow-dark: rgb(188, 201, 4); */
+  --pathway-yellow-dark: #ebcb14;
+  --font-family-title: 'Yeseva One', cursive;
+  --font-family-text: 'Josefin Sans', sans-serif;
+}
+
 body {
   background: linear-gradient(
     to right,
-    rgba(255, 244, 141, 0.8),
-    rgb(188, 201, 4)
+    var(--pathway-yellow-light),
+    var(--pathway-yellow-dark)
   );
+
   font-family: 'Roboto', sans-serif;
   font-family: 'Work Sans', sans-serif;
 }
@@ -13,8 +24,8 @@ body {
 .background {
   background: linear-gradient(
       to right,
-      rgba(255, 244, 141, 0.8),
-      rgb(188, 201, 4)
+      var(--pathway-yellow-light),
+      var(--pathway-yellow-dark)
     ),
     url(https://images.unsplash.com/photo-1573164574472-797cdf4a583a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)
       no-repeat center center fixed;
@@ -26,17 +37,42 @@ body {
   height: 100vh;
 }
 
-.bg-pathway {
-  background-color: #01224d;
+.pathwayBackground {
+  background-color: var(--pathway-blue);
 }
 
 .pathwayColor {
-  color: #01224d;
+  color: var(--pathway-blue);
+}
+
+.fontTitle {
+  font-family: var(--font-family-title);
+}
+
+.fontText {
+  font-family: var(--font-family-text);
 }
 
 .register {
-  color: #01224d;
+  background-color: var(--pathway-blue);
   text-decoration: none;
+  font-size: 1.7rem;
+  animation: registerEffect 1s ease-out infinite;
+}
+
+@keyframes registerEffect {
+  0% {
+    background-color: var(--pathway-blue);
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: var(--pathway-blue);
+  }
+  100% {
+    background-color: var(--pathway-blue);
+    color: white;
+  }
 }
 
 section {
@@ -48,19 +84,13 @@ section {
 }
 
 .contact a {
-  color: #01224d;
+  color: var(--pathway-blue);
   font-weight: bold;
 }
 
 @media (min-width: 1024px) {
   .about h5 {
     width: 75%;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1024px) {
-  .companies {
-    width: 60%;
     margin: 0 auto;
   }
 }
@@ -72,3 +102,79 @@ section {
 .hoverShadow:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+.aboutText {
+  color: #000;
+}
+
+.card-block {
+  width: calc(12rem);
+  height: calc(12rem);
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out !important;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-block:hover {
+  transform: translateY(-5px);
+}
+.card-block-company:hover {
+  background-color: var(--pathway-blue);
+  color: #fff;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.card-image {
+  height: 6rem;
+  width: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card-block {
+    width: calc(95% - 2rem);
+    height: 9rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-image {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+/* Icons Colours */
+.fab {
+  font-size: 30px;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook,
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-linkedin {
+  color: #007bb6;
+}
+.fa-location-dot {
+  color: #ff0000;
+}
+/* Icons Colours */
