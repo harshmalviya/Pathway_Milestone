@@ -1,13 +1,16 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@700&family=Yeseva+One&display=swap');
 
 :root {
   --pathway-blue: #01224d;
+  --pathway-blue-light: #013981;
   --pathway-yellow-light: rgba(255, 244, 141, 0.8);
   /* --pathway-yellow-dark: rgb(188, 201, 4); */
   --pathway-yellow-dark: #ebcb14;
   --font-family-title: 'Yeseva One', cursive;
   --font-family-text: 'Josefin Sans', sans-serif;
+  --font-family-faq: 'Montserrat', sans-serif;
 }
 
 body {
@@ -53,7 +56,11 @@ body {
   font-family: var(--font-family-text);
 }
 
-.register {
+.fontFaq {
+  font-family: var(--font-family-faq);
+}
+
+/* .register {
   background-color: var(--pathway-blue);
   text-decoration: none;
   font-size: 1.7rem;
@@ -73,7 +80,55 @@ body {
     background-color: var(--pathway-blue);
     color: white;
   }
+} */
+
+/* Register Button */
+.register {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
 }
+.register:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--pathway-blue);
+  border-radius: 5px;
+  z-index: -2;
+}
+.register:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  
+  transition: all 0.3s;
+  border-radius: 5px;
+  z-index: -1;
+}
+.register:hover {
+  color: var(--pathway-blue);
+}
+.register:hover:before {
+  width: 100%;
+}
+
+/* Register Button */
 
 section {
   min-height: 100vh;
@@ -86,6 +141,13 @@ section {
 .contact a {
   color: var(--pathway-blue);
   font-weight: bold;
+}
+
+.about {
+  background-color: var(--pathway-blue);
+}
+.faqs {
+  background-color: var(--pathway-blue);
 }
 
 @media (min-width: 1024px) {
@@ -105,6 +167,7 @@ section {
 
 .aboutText {
   color: #000;
+  font-size: 1.5rem;
 }
 
 .card-block {
