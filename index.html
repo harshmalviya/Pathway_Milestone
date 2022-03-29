@@ -24,6 +24,7 @@
     <title>
       Pathway - The Career Counselling and Placement Cell, Ram Lal Anand College
     </title>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
 
   <body>
@@ -517,6 +518,8 @@
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
       });
+      ScrollReveal().reveal('.about', { delay: 250 });
+      ScrollReveal().reveal('.faqs', { delay: 200 });
     </script>
   </body>
 </html>
