@@ -11,8 +11,6 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -21,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <title>
       Pathway - The Career Counselling and Placement Cell, Ram Lal Anand College
     </title>
@@ -74,20 +73,15 @@
     </header>
     <section class="background home" id="home">
       <div
-        class="container h-100 me-auto d-flex flex-column justify-content-center align-items-center fw-bold text-center boom"
+        class="container h-100 me-auto d-flex flex-column justify-content-center align-items-center fw-bold text-center"
       >
         <div class="">
-          <h1 class="display-1 fw-bold pathwayColor fontTitle mb-3">
+          <h1
+            class="display-1 fw-bold pathwayColor mb-3"
+            style="font-family: Yeseva One"
+          >
             Milestone 2022
           </h1>
-          <!-- <a href="https://forms.gle/kpg1VCHKJsX7irZB7" target="_blank">
-            <button
-              type="button"
-              class="btn register btn-lg fw-bolder my-2 fontText"
-            >
-              REGISTER NOW
-            </button>
-          </a> -->
           <a
             href="https://forms.gle/kpg1VCHKJsX7irZB7"
             target="_blank"
@@ -489,17 +483,30 @@
               >rlacollege.edu.in</a
             >
           </h3>
-          <div class="mt-3">
+          <div class="mt-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/pathwaysrlac/"
+              target="_blank"
               data-bs-toggle="tooltip"
-              title="Nupur Gupta (President)"
+              data-bs-placement="bottom"
+              title="Pathway on Facebook"
               ><i class="fa-brands fa-3x fa-facebook"></i
             ></a>
-            <a href="https://instagram.com" class="mx-3"
+            <a
+              href="https://www.instagram.com/placementcell_rlac/"
+              class="mx-3"
+              target="_blank"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Pathway on Instagram"
               ><i class="fa-brands fa-3x fa-instagram fab"></i
             ></a>
-            <a href="https://linkedin.com"
+            <a
+              href="https://www.linkedin.com/company/pathway-the-career-counseling-and-placement-cell-ram-lal-anand-college/"
+              target="_blank"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Pathway on Linkedin"
               ><i class="fa-brands fa-3x fa-linkedin"></i
             ></a>
           </div>
@@ -520,12 +527,19 @@
       });
       ScrollReveal().reveal('.home', { easing: 'ease-in' });
       ScrollReveal().reveal('.about', {
-        distance: '50px',
+        distance: '100px',
         opacity: 0.8,
-        origin: 'bottom'
+        origin: 'bottom',
+        delay: '100'
       });
-      ScrollReveal().reveal('.faqs', { delay: 250 });
+      ScrollReveal().reveal('.faqs', { delay: 200 });
       ScrollReveal().reveal('.companies', { scale: 0.85 });
+      ScrollReveal().reveal('.card-block', {
+        rotate: {
+          x: 20,
+          z: 20
+        }
+      });
     </script>
   </body>
 </html>
