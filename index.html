@@ -61,11 +61,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="#companies">Companies</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#partners">Partners</a>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#faqs">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#partners">Partners</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -124,10 +124,6 @@
             ><i class="fa-solid fa-download"></i>&nbsp;Download Pathway
             Brochure</a
           >
-          <!-- <button class="btn btn-outline-primary">Download Sample CV</button> -->
-          <!-- <button class="btn btn-outline-primary">
-            Download Pathway Brochure
-          </button> -->
         </div>
       </div>
     </section>
@@ -260,17 +256,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="partners" id="partners">
-      <div
-        class="container me-auto d-flex flex-column justify-content-center text-center"
-      >
-        <h1
-          class="fw-bold text-white d-inline-block mx-auto px-4 rounded-3 pathwayBackground mb-4"
-        >
-          PARTNERS
-        </h1>
-      </div>
-    </section> -->
     <section class="faqs" id="faqs">
       <div class="container me-auto d-flex flex-column justify-content-center">
         <h1
@@ -448,6 +433,43 @@
         </div>
       </div>
     </section>
+    <section class="partners" id="partners">
+      <div class="container d-flex flex-column">
+        <h1 class="fw-bold d-inline-block mx-auto px-4 rounded-3 my-5">
+          MEDIA PARTNERS
+        </h1>
+        <div class="media-partners">
+          <div class="media-partners--item">
+            <img src="/assets/partners/delhiuniversityoffical.jpg" alt="" />
+            <h6>delhiuniversityoffical</h6>
+          </div>
+          <div class="media-partners--item">
+            <img src="/assets/partners/du__club.jpg" alt="" />
+            <h6>du__club</h6>
+          </div>
+          <div class="media-partners--item">
+            <img src="/assets/partners/competitionsgenerator.jpg" alt="" />
+            <h6>competitions_generator</h6>
+          </div>
+          <div class="media-partners--item">
+            <img src="/assets/partners/delhibuletin.jpg" alt="" />
+            <h6>du_bulletin</h6>
+          </div>
+          <div class="media-partners--item">
+            <img src="/assets/partners/du_circuit_updates.jpg" alt="" />
+            <h6>du_circuit_updates</h6>
+          </div>
+          <div class="media-partners--item">
+            <img src="/assets/partners/dunewsupto.jpg" alt="" />
+            <h6>dunewsupto</h6>
+          </div>
+          <div class="media-partners--item">
+            <img src="/assets/partners/ensemble.jpg" alt="" />
+            <h6>ensemble._official</h6>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="contact pathwayColor" id="contact">
       <div
         class="container me-auto d-flex flex-column justify-content-center text-center"
@@ -566,6 +588,7 @@
           z: 20
         }
       });
+      ScrollReveal().reveal('.media-partners-item', { scale: 0.85 });
       ScrollReveal().reveal('.contact', { scale: 0.85 });
     </script>
   </body>
