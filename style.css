@@ -203,6 +203,10 @@ section {
   margin-bottom: 0.5rem;
 }
 
+.media-partners .media-partners--item .special {
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .media-partners {
     grid-template-columns: repeat(2, 1fr);
